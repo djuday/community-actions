@@ -1,0 +1,31 @@
+{
+  "meta": "Exported from https://atlas.bot",
+  "flags": {
+    "ttl": 0,
+    "cooldown": 0,
+    "enabled": true,
+    "silent": false,
+    "delete": false,
+    "quiet": false
+  },
+  "restrictions": {
+    "mode": "blacklist",
+    "roles": [],
+    "channels": [],
+    "permissions": []
+  },
+  "trigger": {
+    "type": "memberRoleAdd",
+    "content": null
+  },
+  "content": [
+    {
+      "fallback": true,
+      "type": "channel",
+      "message": "{perset;VERFIFICATION_ROLE_NAME;{user.id}}\n\n{a!ae;--message=\"{user.mention;{perget;VERFIFICATION_ROLE_NAME}} Verification!\";\n--field1name=\"**How to Verify**\";\n--field1value=\"Use `Verify`, `VERIFY` or `verify`\";\n--field1inline;\n--title=\"__**Server Verification System**__\";\n--color=\"#50e3c2\";\n--icon=\"{user.avatarURL;{perget;VERFIFICATION_ROLE_NAME}}\";\n--name=\"{user.username;{perget;VERFIFICATION_ROLE_NAME}}\";\n--footer=\"The IO Server\";\n--footer-icon=\"{guild.IconURL}\";\n--thumbnail=\"https://cdn.discordapp.com/emojis/764991792332013569.png?v=1\";--timestamp=\"true\";\n--description=\"{user.mention;{perget;VERFIFICATION_ROLE_NAME}} You need to verify over here to gain access to the server.\"}\n{user.send;{a!ae;--message=\"{user.mention;{perget;VERFIFICATION_ROLE_NAME}} Verification!\";\n--field1name=\"**How to Verify**\";\n--field1value=\"Use `Verify`, `VERIFY` or `verify`\";\n--field1inline;--title=\"__**Server Verification System**__\";\n--color=\"#50e3c2\";\n--icon=\"{user.avatarURL;{perget;VERFIFICATION_ROLE_NAME}}\";\n--name=\"{user.username;{perget;VERFIFICATION_ROLE_NAME}}\";\n--footer=\"The IO Server\";\n--footer-icon=\"{guild.IconURL}\";\n--thumbnail=\"https://cdn.discordapp.com/emojis/764991792332013569.png?v=1\";\n--timestamp=\"true\";--description=\"{user.mention;{perget;VERFIFICATION_ROLE_NAME}} You need to verify in <#854948156034777118> to gain access to the server.\"}}",
+      "id": "614a264daae03a6090a97a56",
+      "channel": "739880436196573344"
+    }
+  ],
+  "formatVersion": "1.2"
+}

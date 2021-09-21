@@ -1,0 +1,36 @@
+{
+  "meta": "Exported from https://atlas.bot",
+  "flags": {
+    "ttl": 0,
+    "cooldown": 0,
+    "enabled": true,
+    "silent": false,
+    "delete": false,
+    "quiet": false
+  },
+  "restrictions": {
+    "mode": "whitelist",
+    "roles": [
+      "790628311248273498"
+    ],
+    "channels": [
+      "854948156034777118",
+      "790628313776390164"
+    ],
+    "permissions": []
+  },
+  "trigger": {
+    "type": "keyword",
+    "content": "verify"
+  },
+  "content": [
+    {
+      "fallback": true,
+      "type": "channel",
+      "message": "{if;{lower;{args}};==;verify;\n{user.addrole;Server_Member_Role}\n{user.removerole;VERFIFICATION_ROLE_NAME}\n{user.send;{a!ae;--field1name=\"Server Verification System\";\n--field1value=\"{emoji.char;795125672657158144}Thank you for Verifying with us, hope you enjoy your stay!\";\n--field1inline;--color=\"#50e3c2\";\n--icon=\"{user.avatarURL}\";\n--name=\"{user.username}\";\n--footer=\"The IO Server\";\n--footer-icon=\"{guild.IconURL}\";\n--timestamp=\"true\"}}\n{channel.send;\n{a!ae;\n--title=\"Server Verification System\";\n--icon=\"{user.avatarURL}\";\n--name=\"{user.username}\";\n--footer=\"The IO Server\";\n--footer-icon=\"{guild.IconURL}\";\n--thumbnail=\"https://cdn.discordapp.com/emojis/764991792332013569.png?v=1\";\n--timestamp=\"true\";\n--description=\"{user.mention} has verified using the word {args}\"};Verification_Log_Channel}\n{a!ae;\n--title=\"Server Verification System\";\n--color=\"#50e3c2\";\n--icon=\"{user.avatarURL}\";\n--name=\"{user.username}\";\n--footer=\"The IO Server\";\n--footer-icon=\"{guild.IconURL}\";--thumbnail=\"https://cdn.discordapp.com/emojis/764991792332013569.png?v=1\";\n--timestamp=\"true\";\n--description=\"{user.mention}{emoji.char;795125672657158144}Thank you for verifying!\"}\n;\n{user.send;{a!ae;--field1name=\"How to Verify\";\n--field1value=\"Use Verify, VERIFY or verify\";\n--field1inline;--title=\"Server Verification System\";\n--color=\"#50e3c2\";\n--icon=\"{user.avatarURL}\";\n--name=\"{user.username}\";\n--footer=\"The IO Server\";\n--footer-icon=\"{guild.IconURL}\";\n--thumbnail=\"https://cdn.discordapp.com/emojis/764991792332013569.png?v=1\";\n--timestamp=\"true\";\n--description=\"{user.mention}{emoji.char;884668757782433792}Your verification was not approved.\"}}\n{channel.send;\n{a!ae;\n--title=\"Server Verification System\";\n--icon=\"{user.avatarURL}\";\n--name=\"{user.username}\";\n--footer=\"The IO Server\";\n--footer-icon=\"{guild.IconURL}\";\n--thumbnail=\"https://cdn.discordapp.com/emojis/764991792332013569.png?v=1\";\n--timestamp=\"true\";\n--description=\"{user.mention}{emoji.char;884668757782433792} was not able to verify and used the word {args}\"};Verification_Log_Channel}\n{a!ae;--field1name=\"How to Verify\";\n--field1value=\"Use Verify, VERIFY or verify\";\n--field1inline;--title=\"Server Verification System\";--color=\"#50e3c2\";\n--icon=\"{user.avatarURL}\";\n--name=\"{user.username}\";\n--footer=\"The IO Server\";\n--footer-icon=\"{guild.IconURL}\";\n--thumbnail=\"https://cdn.discordapp.com/emojis/764991792332013569.png?v=1\";\n--timestamp=\"true\";\n--description=\"{user.mention}{emoji.char;884668757782433792} was not able to verify. If the problem persists please contact an admin.\"}}",
+      "id": "614a264daae03a6090a97a56",
+      "channel": "739880436196573344"
+    }
+  ],
+  "formatVersion": "1.2"
+}
